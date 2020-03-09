@@ -1,7 +1,7 @@
 <template>
- <div id="app">
-  <router-view>kesini</router-view>
- </div>
+  <div >
+    <span>404</span>
+  </div>
 </template>
 
 <style lang="scss">

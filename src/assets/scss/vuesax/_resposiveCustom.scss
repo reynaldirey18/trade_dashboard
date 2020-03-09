@@ -1,0 +1,74 @@
+@media screen and (max-width: $tabletMinScreen) {
+  .login-page {
+
+    .right-login {
+      display: none;
+    }
+
+    .left-login {
+      width: 100%;
+    }
+    
+    .btn-play-video {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: $mediumScreen) {
+  .swiper-wrapper{
+    left: -135px!important;
+  }
+  .swiper-container{
+    top: -40px;
+    height: 620px!important;
+  }
+  
+}
+@media screen and (max-width: $regularScreen) {
+  .swiper-wrapper{
+    left: -230px !important;
+  }
+  .swiper-slide{
+    width: 25% !important;
+  }
+  .swiper-slide-active{
+    width: 38% !important;
+  }
+  .swiper-pagination{
+    display: none;
+  }
+  
+}
+@media screen and (max-width:1100px){
+  .login-owner{
+    position: relative;
+    width:70%;
+    margin-left: auto!important;
+    height: 100%!important;
+    .container-login-owner{
+      margin-top: auto!important;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 50%!important;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+}
+@media screen and(max-width:$tabletMinScreen){
+  .vPlayer{
+    display: none!important;
+  }
+  .login-owner{
+    width: 100%;
+    margin-left: 0px;
+  }
+  .vid-container{
+    background-image: none;
+    overflow-y: scroll;
+     
+  }
+}

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39&display=swap');
+/*========================================================
+		SPACING
+=========================================================*/
+
+$spacer: 2.2rem;
+$spacer-sm: ($spacer / 2);
+$spacer-lg: ($spacer * 2);
+
+
+
+/*========================================================
+		COLORS
+=========================================================*/
+
+$primary: #8565C4;
+$primary-light:#C5B5E3;
+$success: #2eb851;
+$green-light:#14B8AA;
+$danger: #EB4747;
+$warning: #FF9F43;
+$pending:#e5c41a;
+$dark: #58555D;
+$grey: #97949E;
+$grey-light: #dae1e7;
+$grey-very-light:#F9F8FC;
+$white: #fff;
+$black: #22292f;
+
+$shadow-light:0px 2px 10px rgba(0, 0, 0, 0.1);
+/*========================================================
+		TYPOGRAPHY
+=========================================================*/
+ 
+$font-family-poppins:'Poppins', sans-serif;
+$font-family-barcode:'Libre Barcode 39', cursive;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`. 
+$font-family-base:       $font-family-poppins !default;
+
+$font-size-base:          14px !default;
+$font-size-large:         ceil(($font-size-base * 1.25)) !default;
+$font-size-small:         ceil(($font-size-base * 0.85)) !default;
+
+$h1-font-size:                $font-size-base * 2;
+$h2-font-size:                $font-size-base * 1.74;
+$h3-font-size:                $font-size-base * 1.51;
+$h4-font-size:                $font-size-base * 1.32;
+$h5-font-size:                $font-size-base * 1.14;
+$h6-font-size:                $font-size-base;
+
+
+$line-height-base:        1.625rem !default;
+
+$headings-font-family:    inherit !default;
+$headings-font-weight:    500 !default;
+$headings-line-height:    1.2 !default;
+$headings-color:          #2c2c2c;
+$headings-margin-bottom:      ($spacer / 2) !default;
+
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-bold:            700;
+
+$font-weight-base:            $font-weight-normal;
+$line-height-base:            1.45;
+
+$content-color: #626262;
+
+
+
+/*========================================================
+		TYPOGRAPHY
+=========================================================*/
+
+$reduced-sidebar-width: 80px;
+
+
+/*========================================================
+		DARK THEME
+=========================================================*/
+
+$sidebar-dark-bg: #10163a;
+$content-dark-bg: #262c49;
+$dark-card-color: #10163a;
+$table-dark-stripe: #212744;
+$table-light-stripe: #262c49;
+$grid-dark-color: #343661;
+
+/*========================================================
+	Responsive
+=========================================================*/
+$largeScreen:1440px;
+$mediumScreen:1390px;
+$regularScreen:1300px;
+$tabletScreen:920px;
+$tabletMinScreen:780px;
+$maxMobileScreen:640px;
+$mediumMobileScreen:540px;
+$minMobileScreen:380px;

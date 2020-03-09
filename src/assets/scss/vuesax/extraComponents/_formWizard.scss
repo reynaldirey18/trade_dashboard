@@ -1,0 +1,86 @@
+ .vue-form-wizard.md {
+    .wizard-navigation {
+        .wizard-progress-with-circle{
+            top: 33px !important;
+        }    
+
+        .wizard-nav {
+            .wizard-icon-circle{
+                border: 3px solid #cccccc;
+                width: 55px;
+                height: 55px;
+
+                .wizard-icon{
+                    font-size: 1.5rem;
+                }
+            }
+            
+            .stepTitle{
+                color: #626262;
+            }
+        }
+    }
+}
+.wizard-header{
+    display: none;
+}
+.wizard-nav{
+    width: 100%;
+    display: inline-block;
+    li{
+      width: 33.3333%;
+      float: left;
+      a{
+          display: inline-block;
+          width: 100%;
+         
+          .wizard-icon-circle {
+             float: left;
+             text-align: center;
+             padding: 10px 0px; 
+             background: $grey;
+             border: 0px!important;
+            border-radius: 100px; 
+            .wizard-icon-container{
+                background: transparent!important;
+                .icontile{
+                    color: white;
+                    position: relative;
+                    &:before{
+                        position: relative;
+                        content: '1';
+                        color: white;
+                    }
+                }
+            }
+          }
+        .checked{
+            background: $primary;
+            i{
+                color: white;
+            }
+        }
+      }
+      &.active{
+        a{
+            display: inline-block;
+            width: 100%;
+           
+            .wizard-icon-circle {
+               float: left;
+               text-align: center;
+               padding: 10px 0px; 
+               background: $primary;
+              border-radius: 100px;
+                
+              .wizard-icon-container{ 
+                  
+                  i{
+  
+                  }
+              }
+            }
+        }
+      }
+    }
+  }
