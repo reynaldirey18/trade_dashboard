@@ -1,0 +1,1070 @@
+/*=========================================================================================
+	File Name: _themeDark.scss
+	Description: partial- Styles for dark theme
+	----------------------------------------------------------------------------------------
+	Item Name: Vuesax Admin - VueJS Dashboard Admin Template
+	Version: 1.1
+	Author: Pixinvent
+	Author URL: hhttp://www.themeforest.net/user/pixinvent
+==========================================================================================*/
+
+
+.theme-dark {
+
+	background-color: $content-dark-bg;
+	color: $white !important;
+
+
+	.content-area__heading{
+		h2{
+			color: $white;
+		}
+	}
+	code {
+		color: $grey;
+		background: $content-dark-bg;
+	}
+	pre[class*="language-"]{
+		background-color: $dark;
+		text-shadow: none;
+		code{
+			background-color: transparent;
+			&[class*="language-"]{
+				text-shadow: none;
+			}
+		}
+	}
+	// Label
+	label{
+		color: $white;
+	}
+
+	h1,	h2,	h3,	h4,	h5,	h6 { 
+		color: $white;
+	}
+	// Notification
+	.notification-dropdown{
+		.notification:hover {
+			background: $dark-card-color;
+		}
+	}
+	.vs-component{
+		&.vs-notifications{
+			&.vs-noti-dark{
+				color: $black !important;
+				.filling{
+					background: $grey !important;
+				}
+				h3{
+					color: $black !important;
+				}
+			}
+		}
+	}
+
+	// Card
+	.vx-card {
+		background-color: $dark-card-color;
+
+		.vx-card__title{
+			h4{
+				color: $white;
+			}
+		}
+		.con-vs-alert-dark{
+			color: $grey-light;
+		}
+		.code-content{
+			pre[class^="language-"]{
+				background-color: $content-dark-bg;
+				text-shadow: none;
+				code{
+					background-color: transparent;
+					&[class*="language-"]{
+						text-shadow: none;
+					}
+				}
+			}
+		}
+		.vx-card__body{
+			.con-vs-alert-primary{
+				h4{
+					color: rgba(var(--vs-primary),1);
+				}
+			}
+			.con-vs-alert-success{
+				h4{
+					color: rgba(var(--vs-success),1);
+				}
+			}
+			.con-vs-alert-danger{
+				h4{
+					color: rgba(var(--vs-danger),1);
+				}
+			}
+			.con-vs-alert-info{
+				h4{
+					color: rgba(var(--vs-info),1);
+				}
+			}
+			.con-vs-alert-warning{
+				h4{
+					color: rgba(var(--vs-warning),1);
+				}
+			}
+		}
+
+		// Card-analytics
+		.tasks-today-container{
+			.tasks-today__task{
+				&:hover{
+					background: $table-dark-stripe;
+				}
+			}
+		}
+	}
+	
+	.vx-navbar-wrapper { 
+		background: linear-gradient(to bottom, rgba(44,48,60,0.9) 44%, rgba(44,48,60,0.43) 73%, rgba(44,48,60,0) 100%);
+
+		.vx-navbar {
+			.search-full-container {
+				background-color: $dark-card-color !important;
+				
+				.vx-auto-suggest {
+					input {
+						background: $dark-card-color;
+					}
+				}
+			}
+
+			.vx-auto-suggest {
+				.auto-suggest-suggestions-list{
+					.auto-suggest__suggestion{
+						&.vx-auto-suggest__current-selected{
+							background: $dark-card-color;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// Sidebar Menu
+	.main-menu-sidebar{
+		.vs-sidebar {
+			background-color: $sidebar-dark-bg;
+		}
+		.shadow-bottom{
+			width: 94%;
+			background: linear-gradient(to bottom, rgb(15, 22, 66) 44%, rgba(15, 22, 66, 0.51) 73%, rgba(44, 48, 60, 0) 100%)
+		}
+		.scroll-area--main-sidebar{
+			.feather-icon, span{
+				color: $white;
+			}
+			a{
+				.feather-icon{
+					svg, span{
+						color: $white;
+					}
+				}
+			}
+			.vs-sidebar-group{
+				&.vs-sidebar-group-active{
+					> .group-header{
+						background: $content-dark-bg;
+					}
+				}
+				&.vs-sidebar-group-open{
+					> .group-header{
+						background: $content-dark-bg;
+					}
+				}
+			}
+			.con-vs-chip{
+				box-shadow: 0px 0px 4px 2px $content-dark-bg;
+			}
+		}
+	}
+
+	// Sidebar Perfect Scrollbar
+	.ps{
+		&:hover{
+			&>.ps__scrollbar-y-rail{
+				&:hover{
+					background-color: $dark-card-color;
+				}
+			}
+		}
+	}
+
+	// Grid
+	.grid-demo__layout-container{
+		.vs-row{
+			.vs-col{
+				background-color: $table-dark-stripe;
+				&:last-of-type{
+					background-color: $table-dark-stripe;
+				}
+			}
+		}
+	}
+	.grid-demo__layout-container--block{
+		.vs-row{
+			background-color: $table-dark-stripe;
+		}
+	}
+
+	// Chat card of ecommerce page
+	.chat-card-log{
+		.flex-row-reverse{
+			.msg{
+				&.chat-sent-msg{
+					background-color: $sidebar-dark-bg !important;
+				}
+			}
+		}
+		.msg{
+			background-color: $table-dark-stripe !important;
+		}
+	}
+	.chat-input-container, .chat__input{
+		background-color: $dark-card-color !important;
+		border-top: 1px solid $table-dark-stripe;
+	}
+
+	.app-search-container {
+		background-color: $content-dark-bg;
+	}
+
+	// Chat App
+	#chat-app{
+		#chat-app-container{
+			.chat__profile-search{
+				.vs-inputx{
+					border-color: $grey-light !important;
+				}
+			}
+			#chat-list-sidebar{
+				.chat-scroll-area{
+					.chat__contact:hover{
+						background: $dark-card-color;
+					}
+				}
+			}
+			.chat__header{
+				header{
+					background: $table-dark-stripe !important;
+					h6{
+						color: $white;
+					}
+				}
+			}
+			.chat__bg{
+				.select-none{
+					background-color: $table-dark-stripe !important;
+				}
+				h4{
+					background-color: $table-dark-stripe !important;
+					color: $white;
+				}
+				.msg{
+					background-color: $table-dark-stripe !important;
+				}
+				&.chat-content-area{
+					.chat-content-scroll-area{
+						background: rgba($black,0.2);
+					}
+				}
+			}
+		}
+	}
+
+	// ToDo
+	#todo-app{
+		.todo-list{
+			h6{
+				&.todo-title{
+					color: $white;
+				}
+			}
+			.todo-tags{
+				.con-vs-chip{
+					background: $dark-card-color;
+					color: $white !important;
+				}
+			}
+		}
+		.list-item-component{
+			&:hover{
+				box-shadow: 0px 0 0 0px $dark;
+			}
+		}
+	}
+
+	// Email
+	#email-app{
+		.email__mails{
+			.email__mail-item{
+				.mail__mail-item:hover{
+					box-shadow: 0px 0 0 0px $dark;
+				}
+			}
+			.mail__opened-mail{
+				background: transparent;
+			}
+		}
+		.email-view-sidebar{
+			.vs-sidebar{
+				background-color: $table-dark-stripe !important;
+			}
+		}
+	}
+
+	// Calendar
+	#calendar-app {
+		.full-calendar-body {
+			.week-row {
+				.day-cell.not-cur-month {
+					.day-number {
+						color: rgba(255,255,255,0.24);
+					}
+				}
+			}
+		}
+	}
+
+	// Alert
+	.vs-alert{
+		code {
+			color: $grey;
+			background: $content-dark-bg;
+		}
+	}
+
+	// Avatar
+	.con-vs-chip{
+		.con-vs-avatar{
+			background-color: $dark-card-color !important;
+		}
+	}
+	.con-vs-avatar{
+		background: $content-dark-bg !important;
+		&.con-vs-avatar-primary{
+			background: rgba(var(--vs-primary),1) !important;
+		}
+		&.con-vs-avatar-success{
+			background: rgba(var(--vs-success),1) !important;
+		}
+		&.con-vs-avatar-danger{
+			background: rgba(var(--vs-danger),1) !important;
+		}
+		&.con-vs-avatar-warning{
+			background: rgba(var(--vs-warning),1) !important;
+		}
+		&.con-vs-avatar-info{
+			background: rgba(var(--vs-info),1) !important;
+		}
+		&.con-vs-avatar-dark{
+			background: rgba($grey,1) !important;
+		}
+	}
+
+	// Profile
+	#profile-page{
+		.profile-header{
+			.profile-header-nav{
+				background: $dark-card-color !important;
+			}
+		}
+	}
+
+	// FAQ
+	#faq-page {
+		.faq-bg {
+			background-color: $dark-card-color;
+		}
+	}
+	
+
+	// Badge
+	#badge-demo{
+		h1,	h2,	h3,	h4,	h5,	h6 { 
+			color: $white;
+		}
+	}
+	// breadcrumb
+	.vs-breadcrumb--ol{
+		a, .vs-breadcrum--separator{
+			color: $grey-light;
+		}
+	}
+
+	// Button
+	.vs-button-dark{
+		&.vs-button-filled{
+			background: $grey !important;
+			.vs-button--text{
+				color: $dark;
+			}
+		}
+	}
+	.demo-text-dark{
+		.vs-button-text{
+			color: $grey;
+		}
+	}
+	.vs-button-dark{
+		&.vs-button-border,
+		&.vs-button-flat,&.vs-button-line{
+			border-color: $grey;
+		}
+		.vs-button--text, .vs-icon{
+			color: $grey;	
+		}
+	}
+
+	// Chip
+	.vx-card{
+		.con-vs-chip{
+			background: $content-dark-bg;
+			color: $white !important;
+			&.vs-chip-primary{
+				background: rgba(var(--vs-primary),1);
+			}
+			&.vs-chip-success{
+				background: rgba(var(--vs-success),1);
+			}
+			&.vs-chip-danger{
+				background: rgba(var(--vs-danger),1);
+			}
+			&.vs-chip-warning{
+				background: rgba(var(--vs-warning),1);
+			}
+			&.vs-chip-info{
+				background: rgba(var(--vs-info),1);
+			}
+			&.vs-chip-dark{
+				background: rgba(var(--vs-dark),1);
+			}
+		}
+		.con-chips--input{
+			border: none;
+		}
+	}
+
+	// Divider
+	.vs-divider {
+		.vs-divider-border {
+			border-color: $white !important;
+			&.vs-divider-border-primary{
+				border-color: rgba(var(--vs-primary),1) !important;
+			}
+			&.vs-divider-border-success{
+				border-color: rgba(var(--vs-success),1) !important;
+			}
+			&.vs-divider-border-danger{
+				border-color: rgba(var(--vs-danger),1) !important;
+			}
+			&.vs-divider-border-warning{
+				border-color: rgba(var(--vs-warning),1) !important;
+			}
+			&.vs-divider-border-info{
+				border-color: rgba(var(--vs-info),1) !important;
+			}
+			&.vs-divider-border-dark{
+				border-color: rgba($grey,0.5) !important;
+			}
+		}
+
+		.vs-divider--text{
+			background: transparent;
+			color: $white !important;
+			.vs-icon{
+				color: $white;
+			}
+		}
+	}
+	
+	// Dropdown
+	 .vs-dropdown--menu, .vs-dropdown--menu--after{
+		background: $content-dark-bg;
+		.con-dropdown--group-ul{
+			background: $content-dark-bg;
+		}
+		.vs-dropdown--item{
+			.vs-dropdown--item-link.disabled{
+				color: $grey !important;
+			}
+		}
+	} 
+	
+	// Loading
+	.con-vs-loading{
+		background: $dark-card-color;
+		h4.title-loading{
+			color: $white;
+		}
+	}
+
+	// List
+	.vs-list{
+		.vs-list--header{
+			box-shadow: 0 7px 7px -5px rgba($white,.08);
+
+		}
+		.vs-list--item{
+			border-color: rgba($white,.08);
+		}
+	}
+
+	// Navbar
+	.vs-navbar{
+		border-color: $content-dark-bg;
+		li{
+			&.vs-navbar--item{
+				a{
+					color: $grey-light;
+				}
+				&.is-active-item {
+					a{
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+	#navbar-demo{
+		.vs-navbar{
+			box-shadow: 0 4px 20px 0 rgba(0,0,0,.7);
+		}
+	}
+
+	// Pagination
+	.vs-pagination--nav{
+		.vs-pagination--ul{
+			background: $content-dark-bg;
+			.vs-pagination--li{
+				color: $white;
+			}
+		}
+		.vs-pagination--buttons{
+			background: $content-dark-bg;
+			color: $white;
+		}
+	}
+
+	// Popup
+	.con-vs-popup{
+		.vs-popup{
+			background: $content-dark-bg !important;
+			color: $white;
+			.vs-popup--header{
+				background: $dark-card-color !important;
+				.vs-popup--close{
+					background: $content-dark-bg !important;
+				}
+			}
+		}
+	}
+	#popup-demo{
+		.demo-alignment{
+			.vs-button{
+				background: $content-dark-bg !important;
+				&:hover{
+					box-shadow: $content-dark-bg 0px 8px 25px -8px !important;
+				}
+			}
+		}
+	}
+
+	// Sidebar component
+	.vs-sidebar{
+		background: $content-dark-bg;
+		h4,h5{
+			color: $white;
+		}
+		.vs-sidebar--items{
+			.vs-sidebar--item{
+				a{
+					color: $white;
+				}
+			}
+		}
+		.vs-sidebar-group{
+			&.vs-sidebar-group-active {
+				> .group-header{
+					background: $content-dark-bg;
+				}
+			}
+		}
+	}
+
+	// Slider
+	.con-vs-slider{
+		.vs-slider{
+			background: rgba($content-dark-bg, 0.5);
+		}
+	}
+
+	// Tabs
+	.ul-tabs{
+		.vs-tabs--li{
+			button{
+				color: $white;
+			}
+		}
+	}
+	.vs-tabs-dark {
+		.activeChild button, button:not(:disabled):hover{
+			color: $grey !important;
+		}
+		.line-vs-tabs{
+			background: linear-gradient(30deg,rgba($grey,1),rgba($grey,.5))!important;
+			box-shadow: 0 0 8px 0 rgba($grey,.4)!important;
+		}
+	}
+
+	// Tooltip
+	 .vs-tooltip{
+		&.vs-tooltip-dark{
+			background: $content-dark-bg;
+		}
+	} 
+
+	// Upload
+	.con-upload{
+		.con-input-upload, .con-img-upload{
+			background-color: $content-dark-bg;
+		}
+		.btn-upload-all{
+			background-color: $sidebar-dark-bg;
+		}
+	}
+
+
+	// Form Fields
+	input{
+		background: $content-dark-bg;
+		color: $white;
+		~ .vs-placeholder-label, ~ .vs-input--placeholder{
+			color: $white;
+		}
+	}
+	.vs-input--icon{
+		border-right-color: rgba($white,.2);
+		&.icon-after{
+			border-left-color: rgba($white,.2);
+		}
+	}
+	.vs-input-number{
+		background: $content-dark-bg;
+		button{
+			&.vs-input-number--button-less,
+			&.vs-input-number--button-plus{
+				&:disabled, &.limit{
+					opacity: 0.75;
+					background: $grey;
+				}
+			}
+		}
+	}
+	.vs-con-textarea{
+		background: $content-dark-bg;
+		color: $white;
+		.vs-textarea{
+			color: $white;
+			&:focus{
+				border-color: transparent;
+			}
+		}
+		&.focusx{
+			border-color: transparent;
+			h4{
+				background: transparent;
+			}
+		}
+		&.textarea-danger{
+			.vs-textarea{
+				color: rgba(var(--vs-danger), 1);
+			}
+		}
+	}
+	.vs-switch{
+		background: $content-dark-bg;
+		&.vs-switch-primary{
+			&.vs-switch-active {
+				background: rgba(var(--vs-primary),1);
+			}
+		}
+		&.vs-switch-success{
+			&.vs-switch-active {
+				background: rgba(var(--vs-success),1);
+			}
+		}
+		&.vs-switch-danger{
+			&.vs-switch-active {
+				background: rgba(var(--vs-danger),1);
+			}
+		}
+		&.vs-switch-warning{
+			&.vs-switch-active {
+				background: rgba(var(--vs-warning),1);
+			}
+		}
+		&.vs-switch-info{
+			&.vs-switch-active {
+				background: rgba(var(--vs-info),1);
+			}
+		}
+		&.vs-switch-dark{
+			&.vs-switch-active {
+				background: $table-dark-stripe;
+			}
+		}
+	}
+	.vs-radio-dark{
+		.vs-radio--circle{
+			background: $grey;
+			box-shadow: 0 3px 12px 0 rgba($grey,.4);
+		}
+	}
+	.op-block{
+		box-shadow: 1px 1px 10px rgba($white, .1)
+	}
+	.vs-input-dark{
+		.vs-input--input{
+			&:focus{
+				border-color: $grey !important;
+				~.vs-input--placeholder{
+					color: $grey;
+				}
+			}
+		}
+	}
+	.vue-form-wizard{
+		.wizard-icon-circle{
+			background: $table-light-stripe;
+			border-color: $table-dark-stripe
+		}
+		.wizard-nav-pills{
+			&>li{
+				&>a{
+					color: $white;
+					.stepTitle{
+						color: $grey-light;
+					}
+				}
+			}
+		}
+		.wizard-navigation{
+			.wizard-nav{
+				.stepTitle{
+					color: $grey-light;
+				}
+			}
+		}
+	}
+
+	// Tables
+	.vs-con-table{
+		.vs-con-tbody{
+			background: $table-dark-stripe;
+			border: 2px solid $content-dark-bg;
+			.vs-table--tbody-table{
+				.tr-table{
+					tr{
+						background: $table-light-stripe;
+					}
+				}
+				.vs-table--thead{
+					.con-td-check{
+						background: $table-dark-stripe;
+					}
+				}
+			}
+		}
+		.con-edit-td{
+			background: $table-dark-stripe;
+		}
+		.is-selected{
+			.tr-values{
+				background: $table-dark-stripe !important;
+			}
+		}
+	}
+
+	// Charts : Apex Chart
+	.apexcharts-canvas{
+		.apexcharts-tooltip{
+			&.light{
+				background: $table-dark-stripe;
+				border-color: $table-light-stripe;
+				.apexcharts-tooltip-title{
+					background: $table-dark-stripe;
+				}
+			}
+		}
+		.apexcharts-xaxistooltip{
+			background: $table-dark-stripe;
+			border-color: $table-light-stripe;
+			color: $white;
+			&:before, &:after{
+				border-bottom-color:$table-dark-stripe;
+			}
+		}
+		.apexcharts-yaxistooltip{
+			background: $table-dark-stripe;
+			border-color: $table-light-stripe;
+			color: $white;
+			&:before, &:after{
+				border-left-color:$table-dark-stripe;
+			}
+		}
+		text{
+			fill: $white !important;
+		}
+		.apexcharts-pie-series{
+			path{
+				stroke: $table-light-stripe;
+			}
+		}
+		.apexcharts-legend{
+			.apexcharts-legend-series{
+				.apexcharts-legend-text{
+					color: $grey !important;
+				}
+			}
+		}
+		.apexcharts-toolbar{
+			.apexcharts-menu{
+				background: $table-light-stripe;
+				border-color: $table-light-stripe;
+				.apexcharts-menu-item{
+					background: $table-dark-stripe;
+				}
+			}
+		}
+		.apexcharts-radar-series{
+			polygon{
+				fill: $content-dark-bg;
+				stroke: $table-dark-stripe;
+			}
+		}
+		.apexcharts-track{
+			path{
+				stroke: $table-light-stripe;
+			}
+		}
+	}
+
+	// Colors
+	.token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string{
+		background: transparent;
+	}
+
+	// Seach
+	.search-tab-filter{
+		background: $dark-card-color;
+	}
+
+	// Select
+	.vs-select--options{
+		background: $dark-card-color;
+		border-color: rgba($grey,0.2);
+		.vs-select--item{
+			color: $grey;
+			border-color: rgba($grey,0.2);
+			box-shadow: none;
+			&:hover{
+				background: $content-dark-bg;
+				// color: $grey;
+			}
+		}
+	}
+	.v-select{
+		.dropdown-toggle{			
+			background: $content-dark-bg;
+			.clear{
+				color: $white;
+			}
+			.close{
+				color: $white;
+				opacity: 0.7;
+			}
+		}
+		.selected-tag{
+			color: $white;
+			background: $dark-card-color;
+			border: none;
+		}
+		.open-indicator{
+			&:before{
+				border-color: $grey;
+			}
+		}
+		.dropdown-menu{
+			background: $content-dark-bg;
+			li{
+				a{
+					color: $white;			
+				}
+			}
+		}
+	}
+
+	// Quill editor
+	.quill-editor{
+		.ql-toolbar{
+			button{
+				color: $white;
+				svg{
+					path{
+						stroke: $white;
+					}
+				}
+			}
+			.ql-fill{
+				fill: $white;
+			}
+			.ql-stroke{
+				stroke: $white;
+			}
+			.ql-picker{
+				color: $white;
+				.ql-picker-options{
+					background: $dark-card-color;
+				}
+			}
+		}
+		.ql-editor{
+			&.ql-blank{
+				&::before{
+					color: rgba($white, .6);
+				}
+			}
+		}
+	}
+
+	// Datepicker
+	.vdp-datepicker{
+		.vdp-datepicker__calendar{
+			background: $content-dark-bg;
+			header{
+				.prev, .next, .up{
+					&:not(.disabled){
+						&:hover{
+							background: $dark-card-color;
+						}
+					}
+				}
+				.prev{
+					&:after{
+						border-right-color: $white;
+					}
+				}
+				.next{
+					&:after{
+						border-left-color: $white;
+					}
+				}
+			}
+			.disabled{
+				color: rgba($grey, .6);
+			}
+			.cell.highlighted {
+			    background: $dark-card-color;
+			}
+		}
+		input {
+			border: 0;
+			padding: 10px;
+		}
+	}
+	
+	// Collapse
+	.vs-collapse{
+		&.shadow{
+			box-shadow: 0 0px 8px 0 rgba($white, .1) !important;
+		}
+		.vs-collapse-item {
+    		border-bottom-color: rgba($white,.04);
+    	}
+    	&.border{
+    		border-color: rgba($white, .1);
+    		.vs-collapse-item {
+	    		border-bottom-color: rgba(	$white,.04);
+	    	}
+    	}
+    	&.margin{
+			.vs-collapse-item{
+				background: $dark-card-color;
+				box-shadow: 0 2px 15px 0 rgba($white,.05)
+			}
+		}
+	}
+
+	// vx-auto-suggest
+	.vx-auto-suggest {
+		.auto-suggest-suggestions-list {
+			background-color: $content-dark-bg;
+		}
+	}
+
+	// footer layouts
+	.footer-sticky{
+		.the-footer{
+			background-color: $dark-card-color;
+			color: $white !important;
+		}
+	}
+	// Dialogs - This dialog need a dark layout claas
+	.con-vs-dialog{
+		.vs-dialog{
+			background: $content-dark-bg;
+			color: $white;
+			header{
+				background: $dark-card-color;
+				.con-title-after{
+					h3{
+						color: $white;
+					}
+				}
+				.vs-dialog-cancel,.vs-icon{
+					background: $content-dark-bg;
+					color: $white;
+				}
+			}
+			footer{
+				.vs-button--text{
+					color: $white;
+				}
+			}
+			.vs-dialog-text{
+				.date-label{
+					color: $white;
+				}
+			}
+			input,.vs-con-textarea{
+				background: $dark-card-color;
+			}
+			.con-upload{
+				.con-input-upload,
+				.con-img-upload{
+					background: $dark-card-color;
+				}
+			}
+			.quill-editor{
+				background: $table-light-stripe;
+			}
+		}
+	}
+
+	// Customizer
+	#theme-customizer{
+		.vs-switch{
+			background: $dark-card-color;
+		}
+	}
+}
